@@ -127,10 +127,11 @@ Not with a bang but with a whimper.
 
 <h3>Compilation and run</h3>
 A makefile is included to produce an an executable.
-./formatter hollow.txt hollow-20.txt 20 
-./formatter hollow.txt hollow-40.txt 40
-./formatter hollow.txt hollow-50.txt 50
-	</pre>
+<pre>
+	./formatter hollow.txt hollow-20.txt 20 
+	./formatter hollow.txt hollow-40.txt 40
+	./formatter hollow.txt hollow-50.txt 50
+</pre>
 The resulting output files are as follows: 
 <a href="hollow-20.txt">20-line</a>,
 <a href="hollow-40.txt">40-line</a>,
