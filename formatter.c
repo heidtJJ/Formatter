@@ -62,7 +62,7 @@ void formatter( FILE *infile, FILE *outfile, int width ) {
 		
 	// read each character from file 
 	while ( (c = getc( infile )) != EOF ) {
-		
+
 		//check if the character is a space		
 		if( isspace(c) ) {
 			
@@ -75,13 +75,11 @@ void formatter( FILE *infile, FILE *outfile, int width ) {
 					cur->next = make_list(buffer);
 					cur = cur->next;
 				}		
-				
 				listSize += bufferSize+1;// +1 for space on right (accounted for in printWordList)	
 				bufferSize = 0;
 				buffer = NULL;
 				++numWords;
 			}
-			
 		}
 		else {// add character to the current buffer
 			buffer = insertLetter(buffer, c, bufferSize); 
@@ -93,7 +91,6 @@ void formatter( FILE *infile, FILE *outfile, int width ) {
 	  			exit(1);
 			}		
 		}
-
 		// deal with sizing
 		if(listSize-1 + bufferSize >= width) {
 			--listSize;// get rid of extra space on end
@@ -104,7 +101,6 @@ void formatter( FILE *infile, FILE *outfile, int width ) {
 			top = cur = NULL;		
 		}
 	}
-	
 	--listSize;// get rid of extra space on end
 	printWordList(numWords, listSize, bufferSize, top, cur, outfile, width);
 	putc('\n', stderr);
