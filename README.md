@@ -7,7 +7,7 @@ Here is T.S. Eliot's poem <i><a href="hollow.txt">Hollow Men</a></i> in free for
 <hr>
 
 <h3>Compilation and run</h3>
-A makefile is included to produce an an executable.
+The makefile is included.
 <pre>
 	./formatter hollow.txt hollow-20.txt 20 
 	./formatter hollow.txt hollow-40.txt 40
