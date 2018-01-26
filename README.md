@@ -2,7 +2,7 @@
 This is C program that formats a text so that it fits nicely into a given number of columns. The text formatter must right-justify an input text file so the right margins are aligned in a straight line. The number of columns or width is specified as part of the input.
 <h3>A sample input file</h3>
 
-Here is T.S. Eliot's poem <i><a href="as1/hollow.txt">Hollow Men</a></i> in free form.
+Here is T.S. Eliot's poem <i><a href="hollow.txt">Hollow Men</a></i> in free form.
 <pre>
 The Hollow Men.
 
@@ -126,18 +126,13 @@ Not with a bang but with a whimper.
 <hr>
 
 <h3>Compilation and run</h3>
-
-Here is a sample compilation of a formatter program on our Linux polaris system:
-	<pre>
-	gcc -g -c formatter.c
-	gcc -g -o formatter formatter.o
-	./formatter hollow.txt hollow-20.txt 20 
-	./formatter hollow.txt hollow-30.txt 30
-	./formatter hollow.txt hollow-40.txt 40
+A makefile is included to produce an an executable.
+./formatter hollow.txt hollow-20.txt 20 
+./formatter hollow.txt hollow-40.txt 40
+./formatter hollow.txt hollow-50.txt 50
 	</pre>
-
 The resulting output files are as follows: 
-<a href="as1/hollow-20.txt">20-line</a>,
-<a href="as1/hollow-30.txt">30-line</a>,
-<a href="as1/hollow-40.txt">40-line</a> formats.
+<a href="hollow-20.txt">20-line</a>,
+<a href="hollow-40.txt">40-line</a>,
+<a href="hollow-50.txt">50-line</a> formats.
 <br>
