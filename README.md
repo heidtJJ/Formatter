@@ -14,7 +14,7 @@ The makefile is included.
 	./formatter hollow.txt hollow-50.txt 50
 </pre>
 The resulting output files are as follows: 
-<a href="hollow-20.txt">20-line</a>,
+<a href="hollow-30.txt">30-line</a>,
 <a href="hollow-40.txt">40-line</a>,
 <a href="hollow-50.txt">50-line</a> formats.
 <br>
